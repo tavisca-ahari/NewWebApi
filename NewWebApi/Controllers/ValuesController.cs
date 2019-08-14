@@ -11,7 +11,7 @@ namespace NewWebApi.Controllers
     public class ValuesController : ControllerBase
     {
         // GET api/values
-        [HttpGet("{Hello}")]
+        [HttpGet("{message}")]
         public ActionResult<string> Get(string message)
         {
             return message == "Hello" ? "Hii" : "Hello";
