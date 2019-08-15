@@ -2,7 +2,7 @@ pipeline
 {
 	agent any
 		stages{
-				 stage('Build'){
+				 stage('Building...'){
 					 steps{
 					 powershell 'dotnet build NewWebApi.sln -p:configuration=release -v:n'
 					 echo "Building"
@@ -11,14 +11,14 @@ pipeline
 				
 				 }
 
-				 stage('Test'){
+				 stage('Testing'){
 					steps{
 						powershell 'dotnet test'
 						echo "Testing"
 					}
 				 }
 
-				  stage('Publish'){
+				  stage('Publishing'){
 					steps{
 						powershell 'dotnet publish'
 						echo "Publishing"
