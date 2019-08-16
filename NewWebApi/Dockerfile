@@ -2,22 +2,5 @@
 #For more information, please see https://aka.ms/containercompat
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1803 AS base
-WORKDIR /app
-EXPOSE 80
-EXPOSE 443
-
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-nanoserver-1803 AS build
-WORKDIR /src
-COPY ["NewWebApi/NewWebApi.csproj", "NewWebApi/"]
-RUN dotnet restore "NewWebApi/NewWebApi.csproj"
-COPY . .
-WORKDIR "/src/NewWebApi"
-RUN dotnet build "NewWebApi.csproj" -c Release -o /app
-
-FROM build AS publish
-RUN dotnet publish "NewWebApi.csproj" -c Release -o /app
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "NewWebApi.dll"]
+COPY ./bin/Debug/netcoreapp2.2/publish .
+ENTRYPOINT ["dotnet","NewWebApi.dll"]
