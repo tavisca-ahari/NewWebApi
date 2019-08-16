@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWebApi", "NewWebApi\NewWebApi.csproj", "{A79271F9-BACC-454F-B8BE-EDAE6C5035F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewWebApi", "NewWebApi\NewWebApi.csproj", "{A79271F9-BACC-454F-B8BE-EDAE6C5035F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewWebApiTests", "NewWebApiTests\NewWebApiTests.csproj", "{CEF74F57-F236-4960-8A53-92BBBBA31797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewWebApiTests", "NewWebApiTests\NewWebApiTests.csproj", "{CEF74F57-F236-4960-8A53-92BBBBA31797}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{51DAD08D-BA4D-4B68-AFC5-745F3F27879F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CEF74F57-F236-4960-8A53-92BBBBA31797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEF74F57-F236-4960-8A53-92BBBBA31797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEF74F57-F236-4960-8A53-92BBBBA31797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DAD08D-BA4D-4B68-AFC5-745F3F27879F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DAD08D-BA4D-4B68-AFC5-745F3F27879F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DAD08D-BA4D-4B68-AFC5-745F3F27879F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DAD08D-BA4D-4B68-AFC5-745F3F27879F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
